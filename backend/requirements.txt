@@ -1,0 +1,15 @@
+langgraph==0.0.30
+langchain==0.2.1
+langchain-openai==0.1.6
+openai==1.30.1
+python-dotenv==1.0.1
+pydantic==1.10.12
+flask==2.3.2
+flask-cors==3.0.10
+flask-restful==0.3.9    
+requests==2.31.0
+gunicorn==20.1.0
+langchain-community==0.2.1
+langchain-core
+tavily-python 
+langchain-tavily
