@@ -1,0 +1,73 @@
+/* frontend/src/App.css */
+
+/* Base font for the entire app, complementing Tailwind */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom styles for markdown rendering */
+.markdown-body h1 {
+  font-size: 2.5rem; /* Equivalent to text-4xl or text-5xl in Tailwind */
+  margin-bottom: 1rem;
+}
+
+.markdown-body h2 {
+  font-size: 2rem; /* Equivalent to text-3xl in Tailwind */
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #e2e8f0; /* Tailwind's gray-200 */
+  padding-bottom: 0.4rem;
+}
+
+.markdown-body h3 {
+  font-size: 1.75rem; /* Equivalent to text-2xl in Tailwind */
+  margin-bottom: 0.6rem;
+}
+
+.markdown-body h4 {
+  font-size: 1.5rem; /* Equivalent to text-xl in Tailwind */
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.25rem;
+}
+
+.markdown-body strong {
+  font-weight: 600; /* Semi-bold */
+}
+
+.markdown-body p {
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body pre {
+  background-color: #2d2d2d; /* A dark background for code blocks */
+  color: #f8f8f2; /* Light text color */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto; /* Enable horizontal scrolling for long code lines */
+}
+
+.markdown-body code {
+  background-color: #e2e8f0; /* Tailwind's gray-200 for inline code */
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* Monospace font */
+}
+
+/* Ensure code inside pre blocks doesn't have extra background/padding */
+.markdown-body pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
