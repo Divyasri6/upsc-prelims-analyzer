@@ -13,3 +13,4 @@ langchain-community==0.2.1
 langchain-core
 tavily-python 
 langchain-tavily
+langgraph[mermaid]
