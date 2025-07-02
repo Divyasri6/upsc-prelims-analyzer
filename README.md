@@ -14,7 +14,7 @@ This project is a Flask-based backend application that analyzes UPSC Prelims exa
 
 ---
 ## Graph
-![LangGraph Workflow](graph_images/Langgraph_workflow.png "Detailed flow of the analysis process")
+![LangGraph Workflow](graph_images/LangGraph_workflow.png "Detailed flow of the analysis process")
 ## Tech Stack
 
 - Python 3.8+
