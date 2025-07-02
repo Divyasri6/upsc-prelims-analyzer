@@ -58,15 +58,3 @@ workflow.add_edge("summary_report", END)
 langgraph_app = workflow.compile()
 print("\n--- LangGraph Workflow Compiled Successfully ---")
 
-# --- Graph Visualization ---
-# Create a directory for graph images if it doesn't exist
-output_dir = "graph_images"
-os.makedirs(output_dir, exist_ok=True)
-output_path = os.path.join(output_dir, "langgraph_workflow.png")
-
-try:
-    # Draw and save the graph as a PNG
-    langgraph_app.get_graph().draw_png(output_path)
-    print(f"\nGraph saved successfully to {output_path}")
-except Exception as e:
-    print(f"\nError saving graph: {e}")
