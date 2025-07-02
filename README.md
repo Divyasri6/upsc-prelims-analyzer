@@ -5,7 +5,7 @@ This project is a Flask-based backend application that analyzes UPSC Prelims exa
 ---
 
 ## Features
-
+- **subject_tagging:** Generate subject name for each question
 - **Automated Question Evaluation:** Classifies each answer as Correct, Wrong, or Unattempted.
 - **Mindset Analysis:** Deep cognitive insights on why a student chose incorrect options, identifying misconceptions and knowledge gaps.
 - **Subject Performance Breakdown:** Calculates accuracy and highlights strong and weak subjects.
@@ -13,7 +13,8 @@ This project is a Flask-based backend application that analyzes UPSC Prelims exa
 - **Comprehensive Summary Report:** Provides detailed feedback and an actionable plan for future exam preparation.
 
 ---
-
+## Graph
+![LangGraph Workflow](graph_images/langgraph_workflow.png "Detailed flow of the analysis process")
 ## Tech Stack
 
 - Python 3.8+
