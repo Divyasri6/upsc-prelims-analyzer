@@ -3,7 +3,7 @@
 This project is a Flask-based backend application that analyzes UPSC Prelims exam responses using advanced AI-driven analysis with LangChain, LangGraph, and OpenAI's GPT models. The system evaluates student answers, infers cognitive mindset insights on incorrect responses, performs subject-wise performance breakdown, analyzes unattempted questions, and generates a comprehensive summary report with actionable study recommendations.
 
 ---
-[![Watch the video](graph_images/shotvideo.mp4)
+![Watch demo video](graph_images/shotvideo.mp4)
 
 ## Features
 - **subject_tagging:** Generate subject name for each question
