@@ -13,10 +13,24 @@ This project is a Flask-based backend application that analyzes UPSC Prelims exa
 - **Comprehensive Summary Report:** Provides detailed feedback and an actionable plan for future exam preparation.
 
 ---
-## Graph
-![LangGraph Workflow](graph_images/LangGraph_workflow.png "Detailed flow of the analysis process")
-## Tech Stack
-
+## 🏗️ Architecture
+### Frontend (React.js + TailwindCSS)
+- Upload exam JSON and send to backend
+- Show streamed or generated report
+- Uses Axios for API calls
+- Styled with Tailwind CSS
+### Backend (Flask + LangGraph + OpenAI)
+- Python Flask app exposes /api/analyze_exam
+- LangGraph orchestrates analysis steps:
+- Planning
+- Subject Inference (LLM or keyword-based)
+- Evaluation
+- Mindset Inference
+- Subject Performance Analysis
+- Unattempted Reasoning
+- Summary Report
+  
+### Prerequisites
 - Python 3.8+
 - Flask (Web API)
 - LangChain, LangGraph (AI workflow orchestration)
@@ -26,9 +40,7 @@ This project is a Flask-based backend application that analyzes UPSC Prelims exa
 - Flask-CORS (Cross-origin resource sharing)
 
 ---
-
 ## Setup Instructions
-
 ### 1. Clone the Repository
 
 ```bash
@@ -53,12 +65,14 @@ Create a .env file in the root directory with your OpenAI API key:
 OPENAI_API_KEY=your_openai_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
 ```
-
 ### 5. Run the Flask Server
 ```bash
 python app.py
 The API will be available at http://127.0.0.1:5000/api/analyze_exam
 ```
+## Graph
+![LangGraph Workflow](graph_images/LangGraph_workflow.png "Detailed flow of the analysis process")
+
 ## API Usage
 ### Endpoint
 ```bash
@@ -94,3 +108,15 @@ Content-Type: application/json
   "final_state": { ... }  // Detailed JSON object of all intermediate analysis states
 }
 ```
+## Frontend Setup
+```bash
+cd ../client
+npm install
+npm run dev
+```
+Visit http://localhost:3000
+# online Deployment
+https://upsc-frontend-9tkb.onrender.com
+https://upsc-backend-0pey.onrender.com/api/analyze_exam'
+# 📝 License
+MIT License
